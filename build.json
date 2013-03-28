@@ -1,0 +1,22 @@
+{
+  "defaultTarget": "all",
+  "properties": {
+    "sourceDir": "src",
+    "buildDir": "build",
+    "binDir": "bin"
+  },
+  "plugins": {},
+  "targets": {
+    "all": {
+      "builder": "js",
+      "outputs": "${binDir}/benri.js",
+      "resources": [
+        {
+          "type": "files",
+          "root": "${sourceDir}",
+          "include": "\\.js$"
+        }
+      ]
+    }
+  }
+}
